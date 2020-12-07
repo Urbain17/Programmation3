@@ -1,0 +1,54 @@
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Ville de départ</mat-label>
+      <input matInput placeholder="Ville" required>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Destination</mat-label>
+        <input matInput placeholder="Ville" required>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Hôtel</mat-label>
+        <input matInput placeholder="Nom de l'hôtel" required minlenght="2">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Adresse de l'hôtel</mat-label>
+        <input matInput placeholder="Adresse" required minlength="2">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Nombre d'étoiles</mat-label>
+        <input matInput placeholder="Étoiles" required>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Nombre de chambres</mat-label>
+        <input matInput placeholder="Chambres" required>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Caractéristiques</mat-label>
+        <input matInput placeholder="Caractéristiques" required>
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Choisir une date de départ</mat-label>
+        <input matInput [matDatepicker]="picker" required>
+        <mat-datepicker-toggle matSuffix [for]="picker">
+          <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+        </mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Choisir une date de retour</mat-label>
+        <input matInput [matDatepicker]="picker" required>
+        <mat-datepicker-toggle matSuffix [for]="picker">
+          <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+        </mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Prix</mat-label>
+        <input matInput placeholder="Caractéristiques" required>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Rabais</mat-label>
+        <input matInput placeholder="Rabais" required>
+      </mat-form-field>
+  </form>

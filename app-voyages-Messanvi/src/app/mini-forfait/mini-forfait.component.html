@@ -1,0 +1,37 @@
+<!--mini-forfait : destination, ville de départ, nom de l’hôtel, nombre d’étoiles, prix (+ rabais si applicable), date de départ et durée.-->
+<div *ngIf="forfaits.vedette === true">
+<div class="myDiv">
+    Ville de départ : {{forfaits.villeDeDepart}} 
+</div>
+
+<div>
+     Destination : {{forfaits.destination}}
+</div>
+
+<div>
+    Hotel : {{forfaits.hotel.nom}}
+</div>
+
+<div>
+    <app-etoiles *ngFor="let item of [].constructor(forfaits.hotel.nbretoiles);"></app-etoiles>
+</div>
+
+
+<div>
+    Date de départ : {{forfaits.dateDepart}}
+</div>
+
+<div  *ngIf="forfaits.rabais > 0; else elseBlock" >
+    Prix :
+    <span class="firstprice">{{forfaits.prix}} </span>
+   <span class="secondprice">{{forfaits.prix*(1 - forfaits.rabais / 100)}} </span>
+</div>
+
+<ng-template #elseBlock><span class="secondprice">Prix : {{ forfaits.prix }} </span></ng-template>
+  
+
+
+<div>
+    Rabais : {{forfaits.rabais}}
+</div><br>
+</div>
