@@ -12,7 +12,9 @@ import { FormulaireRechercheComponent } from './formulaire-recherche/formulaire-
 import { MatSliderModule } from '@angular/material/slider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule  } from '@angular/material/core';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     BrowserAnimationsModule,
     MatIconModule,
     MatFormFieldModule,
-    MatDatepickerModule
+    MatSidenavModule,
+    MatDatepickerModule,
+    MatNativeDateModule  
   ],
   providers: [],
   bootstrap: [AppComponent]

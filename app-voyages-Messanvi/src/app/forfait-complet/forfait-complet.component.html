@@ -2,7 +2,7 @@
     à l’utilisateur de les distinguer facilement (style selon vos préférences).
 
 La liste des forfaits complets doit s’afficher en dessous des forfaits vedette miniatures dans une liste avec diviseurs. -->
-
+<div [ngClass]="{ vedette: forfaits.vedette === true }">
 <div class="myDiv">
     Ville de départ : {{forfaits.villeDeDepart}} 
 </div>
@@ -45,3 +45,5 @@ La liste des forfaits complets doit s’afficher en dessous des forfaits vedette
 <div>
     Rabais : {{forfaits.rabais}}
 </div><br>
+
+</div>
