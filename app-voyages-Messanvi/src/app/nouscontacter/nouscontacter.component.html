@@ -1,0 +1,52 @@
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Formulaire</mat-label>
+      <input matInput disabled value="Envoyez-nous un message">
+    </mat-form-field>
+  
+    <table class="example-full-width" cellspacing="0"><tr>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Prénom</mat-label>
+        <input matInput>
+      </mat-form-field></td>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Nom</mat-label>
+        <input matInput>
+      </mat-form-field></td>
+    </tr></table>
+  
+    <p>
+      <mat-form-field class="example-full-width">
+        <mat-label>Adresse</mat-label>
+        <textarea matInput placeholder="Ex. 11850 rue Sherbrooke E"></textarea>
+      </mat-form-field>
+      
+    </p>
+  
+    <table class="example-full-width" cellspacing="0"><tr>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Ville</mat-label>
+        <input matInput placeholder="Ex. Sherbrooke">
+      </mat-form-field></td>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Province</mat-label>
+        <input matInput placeholder="Ex Québec">
+      </mat-form-field></td>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Code postal</mat-label>
+        <input matInput #postalCode maxlength="5" placeholder="Ex. A1A 1A1" value="">
+       
+      </mat-form-field></td>
+    </tr></table>
+  </form>
+
+
+  <form class="example-form">
+  
+    <mat-form-field class="example-full-width">
+      <mat-label>Laisser un commentaire</mat-label>
+      <textarea matInput placeholder="Ex. Votre service à la clientèle est impeccable..."></textarea>
+    </mat-form-field>
+  </form>
+
+  <button>Envoyer</button>

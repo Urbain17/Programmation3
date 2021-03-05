@@ -1,0 +1,14 @@
+
+<app-formulaire-recherche></app-formulaire-recherche>
+
+<div *ngFor="let forfait of forfaits">
+
+<app-mini-forfait [forfaits]="forfait"></app-mini-forfait>
+
+</div>
+
+<div *ngFor="let forfait of forfaits">
+
+    <app-forfait-complet [forfaits]="forfait"></app-forfait-complet>
+
+</div>

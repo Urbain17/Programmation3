@@ -1,0 +1,19 @@
+<mat-toolbar color="primary" class="mat-elevation-z6">
+   
+    <span><mat-icon>eco</mat-icon> ForfaitVoyages</span>
+    
+    <div class="spacer"></div>
+    
+    <a mat-button routerLink="accueil">Accueil</a>
+    <a mat-button routerLink="forfaity">Forfaits Y</a>
+    <a mat-button routerLink="forfaitz">Forfaits Z</a>
+    <a mat-button routerLink="apropos">À propos</a>
+    <a mat-button routerLink="nouscontacter">Nous contacter</a>
+  
+    <button mat-raised-button [matMenuTriggerFor]="menu" color="accent" routerLink="administration">Administration</button>
+    <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="gestiondesforfaits">Gestion des forfaits</button>
+    <button mat-menu-item routerLink="graphiques">Graphiques</button>
+    </mat-menu>
+    
+</mat-toolbar>

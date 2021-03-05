@@ -1,0 +1,56 @@
+<form #forfaitFormAjout="ngForm" id="forfaitFormAjout" matInput>
+    <mat-form-field class="input-full-width">
+        <input type="text" [(ngModel)]="newForfait.destination" name="destination" matInput placeholder="nouvelle destination">
+    </mat-form-field>
+
+    <mat-form-field class="input-full-width">
+        <input type="text" [(ngModel)]="newForfait.villeDepart" name="villeDepart" matInput placeholder="ville de depart">
+    </mat-form-field>
+
+    <mat-form-field class="input-full-width">
+        <input type="text" [(ngModel)]="newForfait.hotel.nom" name="nomHotel" matInput placeholder="Nom hotel">
+    </mat-form-field>
+
+    <mat-form-field class="input-full-width">
+        <input type="text" [(ngModel)]="newForfait.hotel.coordonnees" name="coordonnees" matInput placeholder="coordonnees">
+    </mat-form-field>
+
+    <mat-form-field class="input-full-width">
+        <input type="text" [(ngModel)]="newForfait.hotel.nombreEtoiles" name="nombreEtoiles" matInput placeholder="Nombre etoiles">
+    </mat-form-field>
+
+    <mat-form-field class="input-full-width">
+        <input type="text" [(ngModel)]="newForfait.hotel.nombreChambres" name="nombreChambres" matInput placeholder="Nombre chambres hotel">
+    </mat-form-field>
+
+    <mat-form-field class="input-full-width">
+        <input type="text" [(ngModel)]="newForfait.hotel.caracteristiques" name="caracteristiques" matInput placeholder="Caracteristiques">
+    </mat-form-field>
+
+    <mat-form-field class="input-full-width">
+        <input type="text" [(ngModel)]="newForfait.dateDepart" name="dateDepart" matInput placeholder="Date de depart">
+    </mat-form-field>
+
+    <mat-form-field class="input-full-width">
+        <input type="text" [(ngModel)]="newForfait.dateRetour" name="dateRetour" matInput placeholder="Date de retour">
+    </mat-form-field>
+
+    <mat-form-field class="input-full-width">
+        <input type="text" [(ngModel)]="newForfait.prix" name="prix" matInput placeholder="Prix">
+    </mat-form-field>
+
+    <mat-form-field class="input-full-width">
+        <input type="text" [(ngModel)]="newForfait.rabais" name="rabais" matInput placeholder="Rabais">
+    </mat-form-field>
+
+    <mat-form-field class="input-full-width">
+        <input type="text" [(ngModel)]="newForfait.vedette" name="vedette" matInput placeholder="Vedette">
+    </mat-form-field>
+
+
+    <div mat-dialog-actions>
+        <button mat-button (clik)="onAnnulerClick()">Annuler</button>
+        <button mat-button [mat-dialog-close]="newForfait" cdkFocusInitial>Ok</button>
+    </div>
+
+</form>

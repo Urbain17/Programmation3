@@ -3,47 +3,47 @@
 
 La liste des forfaits complets doit s’afficher en dessous des forfaits vedette miniatures dans une liste avec diviseurs. -->
 <div [ngClass]="{ vedette: forfaits.vedette === true }">
-<div class="myDiv">
-    Ville de départ : {{forfaits.villeDeDepart}} 
-</div>
-
-<div>
-     Destination : {{forfaits.destination}}
-</div>
-
-<div>
-    Hotel : {{forfaits.hotel.nom}}
-</div>
-
-<div>
-    Adresse : {{forfaits.hotel.adresse}}
-</div>
-
-<div>
-    Nombre de chambre : {{forfaits.hotel.nbreChambres}}
-</div>
-
-<div>
-    <app-etoiles *ngFor="let item of [].constructor(forfaits.hotel.nbretoiles);"></app-etoiles>
-</div>
-
-<div>
-    Caractéristiques : {{forfaits.hotel.caracteristiques}}
-</div>
-
-<div>
-    Date de départ : {{forfaits.dateDepart}}
-</div>
-<div>
-    Date de retour : {{forfaits.dateRetour}}
-</div>
-
-<div>
-    Prix : {{forfaits.prix}}
-</div>
-
-<div>
-    Rabais : {{forfaits.rabais}}
-</div><br>
-
-</div>
+    <div class="myDiv">
+        Ville de départ : {{forfaits.villeDepart}} 
+    </div>
+    
+    <div>
+         Destination : {{forfaits.destination}}
+    </div>
+    
+    <div>
+        Hotel : {{forfaits.hotel.nom}}
+    </div>
+    
+    <div>
+        coordonnees : {{forfaits.hotel.coordonnees}}
+    </div>
+    
+    <div>
+        Nombre de chambre : {{forfaits.hotel.nombreChambres}}
+    </div>
+    
+    <div>
+        <app-etoiles *ngFor="let item of [].constructor(forfaits.hotel.nombreEtoiles);"></app-etoiles>
+    </div>
+    
+    <div>
+        Caractéristiques : {{forfaits.hotel.caracteristiques}}
+    </div>
+    
+    <div>
+        Date de départ : {{forfaits.dateDepart}}
+    </div>
+    <div>
+        Date de retour : {{forfaits.dateRetour}}
+    </div>
+    
+    <div>
+        Prix : {{forfaits.prix}}
+    </div>
+    
+    <div>
+        Rabais : {{forfaits.rabais}}
+    </div><br>
+    
+    </div>

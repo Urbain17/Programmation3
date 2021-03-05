@@ -1,8 +1,4 @@
 import { Component } from '@angular/core';
-import { Forfait } from "./forfait";
-import { FORFAITS } from  "./mock-forfaits";
-
-
 
 @Component({
   selector: 'app-root',
@@ -11,8 +7,4 @@ import { FORFAITS } from  "./mock-forfaits";
 })
 export class AppComponent {
   title = 'app-voyages-Messanvi';
-  forfaits : Forfait[] = FORFAITS;
-
 }
-
-

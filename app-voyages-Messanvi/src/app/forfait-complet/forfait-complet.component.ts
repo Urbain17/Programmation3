@@ -1,5 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Input } from '@angular/core';
 import { Forfait } from "../forfait";
+
 
 
 @Component({
@@ -8,7 +10,9 @@ import { Forfait } from "../forfait";
   styleUrls: ['./forfait-complet.component.css']
 })
 export class ForfaitCompletComponent implements OnInit {
-  @Input() forfaits : Forfait;
+
+  @Input()
+  forfaits!: Forfait;
   constructor() { }
 
   ngOnInit(): void {
